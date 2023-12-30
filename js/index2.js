@@ -5,14 +5,13 @@ frm.addEventListener("submit", (e) => {
     const moneda = frm.moneda.value;
     const costo = frm.importe.value;
 
-    // Objeto de tasas de cambio
     const tasasDeCambio = {
         'Dólares estadounidenses (USD)': { tasa: 40.5, nombre: 'Dólares estadounidenses' },
         'Euros (EUR)': { tasa: 47.3, nombre: 'Euros' },
         'Reales(R$)': { tasa: 9.2, nombre: 'Reales' }
     };
 
-    // Verificar si la moneda seleccionada existe en el objeto
+
     if (moneda in tasasDeCambio) {
         const { tasa, nombre } = tasasDeCambio[moneda];
         const total = costo * tasa;

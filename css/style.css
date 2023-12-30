@@ -1,11 +1,11 @@
-/* Reset de estilos para normalizar el renderizado en diferentes navegadores */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo básico para el cuerpo de la página */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
